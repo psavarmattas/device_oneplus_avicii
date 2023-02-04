@@ -11,10 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avicii device
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_avicii
+#CHERISH PROPERTIES
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_ENABLE_BLUR := true
+
+
+PRODUCT_NAME := cherish_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -25,6 +30,11 @@ PRODUCT_SYSTEM_NAME := Nord
 PRODUCT_SYSTEM_DEVICE := Nord
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Snippetguy
+
+CHERISH_BUILD_TYPE := OFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \

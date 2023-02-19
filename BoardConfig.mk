@@ -99,7 +99,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest_odm.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oplus
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_avicii
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2

@@ -16,6 +16,7 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 #CHERISH PROPERTIES
 EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 
 

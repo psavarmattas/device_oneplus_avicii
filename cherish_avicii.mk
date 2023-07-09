@@ -32,7 +32,7 @@ PRODUCT_SYSTEM_DEVICE := Nord
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Snippetguy
+    ro.cherish.maintainer=PSavarMattas
 
 CHERISH_BUILD_TYPE := OFFICIAL
 
